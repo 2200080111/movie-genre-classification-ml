@@ -1,46 +1,44 @@
 # 🎬 Movie Genre Classification using Machine Learning
 
-## 📌 Objective
-
-The goal of this project is to build a machine learning model that can classify movies into genres based on their plot descriptions. This project was completed as part of a Machine Learning internship task.
+This project builds a machine learning model to automatically classify movies into genres based on their plot descriptions.
 
 ---
 
-## 📁 Dataset Overview
+## 📚 Project Description
 
-The dataset used consists of movie metadata and descriptions split into the following files:
-
-- `train_data.txt`: Contains movie ID, title, genre, and description. Used to train the model.
-- `test_data.txt`: Contains movie ID, title, and description. Used to predict genres.
-- `test_data_solution.txt`: Contains movie title, genre, and description. Used to evaluate the model's performance.
-
-All fields are separated by ` ::: `.
-
----
-
-## 🛠️ Technologies Used
-
-- Python
-- Pandas
-- Scikit-learn
-- NLTK (for text preprocessing)
-- TF-IDF (Text Vectorization)
-- Logistic Regression (Classifier)
+The objective is to develop a machine learning model that accurately predicts the **genre** of a movie by analyzing its **plot description**.  
+The project involves:
+- Preprocessing raw text data
+- Converting text into numerical vectors using TF-IDF
+- Training multiple classifiers
+- Comparing models based on accuracy, precision, recall, and F1-score
 
 ---
 
-## 📊 Features & Highlights
+## 🗂 Dataset
 
-- Cleaned and normalized movie descriptions using NLP
-- Converted text into numerical vectors using TF-IDF
-- Built a Logistic Regression classifier to predict genres
-- Matched and evaluated predictions against test labels
-- Handled memory-safe evaluation using smart label filtering
+- `train_data.txt` — Training data containing movie ID, title, genre, and description
+- `test_data.txt` — Testing data containing movie ID, title, and description
+- `test_data_solution.txt` — Ground truth labels (genre) for the test set
+
+---
+
+## ⚙️ Tech Stack
+
+- **Language**: Python
+- **Libraries**:
+  - Pandas
+  - Scikit-learn
+  - NLTK (for text preprocessing)
+- **Model Evaluation**:
+  - Accuracy
+  - Precision, Recall, F1-Score (per genre)
 
 ---
 
 ## 🚀 How to Run the Project
 
-1. **Install dependencies**:
+1. Clone the repository:
+
    ```bash
-   pip install -r requirements.txt
+   git clone https://github.com/your-username/your-repo-name.git
